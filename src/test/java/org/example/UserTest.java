@@ -1,10 +1,8 @@
-package org;
+package org.example;
 
 
 
 
-import org.Sex;
-import org.User;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
