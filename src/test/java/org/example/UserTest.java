@@ -1,8 +1,6 @@
 package org.example;
 
 
-
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -29,9 +27,10 @@ public class UserTest {
         userNotAdd = new User("", 0, null);
         userNotAdd1 = new User(null, 0, null);
     }
+
     @Test
     public void newUser_EMPTY_NAME() {
-        for (User user : User.getAllUsers()){
+        for (User user : User.getAllUsers()) {
             if (user.getName() != null && user.getName().isEmpty()) {
                 Assertions.fail("Попытка создания пользователя с пустым именем");
             }
